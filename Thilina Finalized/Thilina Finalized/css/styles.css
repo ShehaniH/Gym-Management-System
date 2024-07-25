@@ -1,0 +1,202 @@
+body {
+    overflow: auto;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    width: 14%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sidebar .user-profile {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.sidebar .user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-details {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuBar {
+    margin-left: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    height: 60px;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+}
+
+
+#menuBar-logo {
+    width: 70px;
+    height: 50px;
+}
+
+#search-option {
+    display: flex;
+    align-items: center;
+}
+
+#search-option input {
+    width: 250px;
+    height: 25px;
+}
+
+#search-option button {
+    width: 80px;
+    height: 30px;
+}
+
+.user-profile-container {
+    display: flex;
+    align-items: center;
+}
+
+#menuBar-profile-photo {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.user-profile-manage {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    margin-left: 19%;
+    width: 80%;
+}
+
+.user-load-container {
+    width: 600px;
+    height: 320px;
+    background-color: blue;
+    margin-top: -5%;
+    margin-left: 40%;
+    overflow-y: scroll;
+    position: fixed;
+    flex-direction: row;
+}
+
+
+
+.user-profile-manage button {
+    width: 90px;
+    margin-top: 5px;
+    border-radius: 5%;
+}
+
+.user-request-load-container {
+    width: 600px;
+    height: 200px;
+    background-color: rgb(154, 146, 61);
+    margin-top: -5%;
+    margin-left: 40%;
+    overflow-y: scroll;
+    position: fixed;
+    flex-direction: row;
+}
+
+.sidebar ul li a img {
+    width: 25px;
+    margin-right: 10px;
+}
+.item1{
+    display:flex;
+    margin-left: 100px;
+}
+.submit-button {
+    width: 150px; 
+    height: 40px; 
+    background-color:rgb(98, 138, 211);
+    color:white;
+    margin: left 100px;
+   
+}
+.submit-button-add {
+    width: 150px; 
+    height: 40px; 
+    background-color:rgb(81, 135, 0);
+    color:white;
+    margin: left 100px;
+   
+}
+.submit-button-remove{
+    width: 150px; 
+    height: 40px; 
+    background-color:rgb(236, 111, 111);
+    color:white;
+    margin: left 100px;
+   
+}
+/* manage shop navigation bar */
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+};
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+};
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+};
+
+a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    background-color: #ddd;
+}
+   

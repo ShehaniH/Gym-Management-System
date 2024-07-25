@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 8%;
+        }
+
+        .main-div {
+            /* background-color: rgb(105, 105, 198); */
+            border: 1px solid black;
+            padding: 10px;
+            padding-top: 2%;
+            width: 30%;
+            height: 500px;
+        }
+
+        .main-div div {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .paymentMethos-img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"]{
+            height: 30px;
+        }
+        
+        .s-details{
+            width: 35%;
+        }
+
+        .s-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="main-div">
+
+        <img class="paymentMethos-img" src="assect\paymentGateway\paymentMethods-img.png" alt="">
+
+        <div>
+            card holder name :
+            <input type="text">
+        </div>
+
+        <div>
+            card number :
+            <input type="text">
+        </div>
+
+        <div class="s-container">
+            <div class="s-details">
+                Expiration :
+                <input  type="text">
+            </div>
+
+            <div class="s-details">
+                Security :
+                <input  type="text">
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

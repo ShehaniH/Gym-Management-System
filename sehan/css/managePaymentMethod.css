@@ -1,0 +1,356 @@
+body {
+    overflow: auto;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    width: 14%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sidebar .user-profile {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.sidebar .user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-details {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuBar {
+    margin-left: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    height: 60px;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+}
+
+
+#menuBar-logo {
+    width: 70px;
+    height: 50px;
+}
+
+#search-option {
+    display: flex;
+    align-items: center;
+}
+
+#search-option input {
+    width: 250px;
+    height: 25px;
+}
+
+#search-option button {
+    width: 80px;
+    height: 30px;
+}
+
+.user-profile-container {
+    display: flex;
+    align-items: center;
+}
+
+#menuBar-profile-photo {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.user-profile-manage {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile-manage button {
+    width: 90px;
+    margin-top: 5px;
+    border-radius: 5%;
+}
+
+.main {
+    margin-left: 19%;
+    width: 80%;
+    position: flex;
+    flex-direction: row;
+}
+
+.user-load-container {
+    width: 600px;
+    height: 320px;
+    background-color: blue;
+    margin-top: -5%;
+    margin-left: 50%;
+    overflow-y: scroll;
+}
+
+.user-request-load-container {
+    width: 600px;
+    height: 200px;
+    background-color: rgb(154, 146, 61);
+    margin-top: -5%;
+    margin-left: 40%;
+    overflow-y: scroll;
+    position: fixed;
+    flex-direction: row;
+}
+
+.sidebar ul li a img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* ================================================================= */
+/* manage payment method styles */
+/* ================================================================= */
+
+#contact-developer-btn{
+    /* background-color: rgb(89, 89, 225);
+    color: white;
+    border-radius: 5px;
+    border-color: black;
+    
+    margin-bottom: 20px;
+    width: 210px;
+    height: 30px;
+    align-items: center; */
+
+    background-color: rgb(89, 89, 225);
+    color: white;
+    width: 160px;
+    height: 16px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 84%;
+    margin-bottom: 10px;
+}
+
+#contact-developer-btn img{
+    width: 25px;
+    padding:3px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  table, th{
+    border: 1px solid black;
+  }
+
+  table td{
+    border-left: 1px solid black;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  table th{
+    text-align: center;
+  }
+
+.check-center,
+.edite-center{
+    text-align: center;
+}
+
+.edite-href{
+    text-decoration: none; cursor: pointer;
+}
+#Management-payment-method-btn{
+    background-color: rgb(89, 89, 225);
+    color: white;
+    width: 230px;
+    height: 16px;
+    /* display: block; */
+    padding: 10px;
+    text-decoration: none;
+    border-radius: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: none;
+    margin-top: 10px;
+}
+#Management-payment-method-btn img{
+    width: 25px;
+    padding:3px;
+}
+#Create-new-payment-method-btn{
+    background-color: rgb(89, 89, 225);
+    color: white;
+    width: 230px;
+    height: 16px;
+    /* display: block; */
+    padding: 10px;
+    text-decoration: none;
+    border-radius: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 78%;
+    margin-top: -35px;
+    /* margin-bottom: 10px; */
+}
+#Create-new-payment-method-btn img{
+    width: 25px;
+    padding:3px;
+}
+
+/* =========================add payment method==================================== */
+
+.addPaymentMethod-form,
+.editPaymentMethod-form{
+    width:50%;
+    margin-left:20px ;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .radio-group {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 3px;
+  }
+/* /*=====================================contact developers form=========================== */
+
+.contact-developers {
+    width: 50%;
+   margin-bottom: 20px;
+  }
+
+  #name,#email{
+    width: 100%;
+    height: 30px;
+  }
+
+  #message{
+    width: 75%;
+    height: 150px;
+  }
+  
+  #contact-submit{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+ #contact-submit:hover{
+  background-color: #429046;
+ }
+
+
+  /* input[type="text"],
+  textarea {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  } */
+  
+  
+  
+  
+  
+  

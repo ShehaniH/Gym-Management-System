@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/userSide.css">
+    <script src="js/script-cart.js"></script>
+    <title>My cart</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav-session-one">
+            <!-- rocstar logo in hear -->
+            <img class="nav-logo" src="assect/user-navigationBar/nav-logo.png" alt="logo">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#">Home</a></li>
+                <li class="nav-list-item"><a href="#">Shop</a></li>
+                <li class="nav-list-item"><a href="#">About us</a></li>
+                <li class="nav-list-item"><a href="#">feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-session-two">
+            <!-- shoping cart image in hear -->
+            <div style="position: relative;">
+                <img class="nav-shopping-cart" src="assect/user-navigationBar/shoping-cart.png" alt="Cart" onclick="navigateToCart()">
+                <!-- add cart item ount -->
+                <span id="item-count">0</span>
+            </div>
+
+            <div class="nav-search-option">
+                <input class="nav-search-bar" type="search">
+                <!-- serch button -->
+                <button id="nav-search-btn">Search</button>
+            </div>
+            <div class="nav-user">
+                <img id="nav-user-img" src="assect/user-navigationBar/nav-user.png" alt="">
+                <a id="nav-account" href="#">Account</a>
+                <div class="nav-account-sidebar">
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <section id="main">
+
+        <div id="container">
+
+            <div id="shoping-cart-title">
+                <div id="titleAndDeletebtn">
+                    <h1>Shopping cart(3)</h1>
+
+                    <!-- cart delete button -->
+                    <a id="delete-cart" href="#">Delete</a>
+                </div>
+                <input type="checkbox" id="selectAll" onclick="toggleSelectAll()">Select all Items
+            </div>
+
+            <div id="contet-loder">
+
+                <!-- item 01 -->
+                <div class="content">
+                    <input type="checkbox" class="content-checkBox" onclick="" checked>
+                    <!-- item image in here -->
+                    <img class="content-image" src="assect/cart/item1-img.jpg" alt="">
+
+                    <h4 class="product-name">Animal cuts powder orange Mango Flaver 650g</h4>
+                    <a class="delete-icon" href="#"><img width="28" src="assect/bin-icon2.png" alt=""></a>
+
+                    <h4 class="item-price">Rs. 16,500</h4>
+                    <div style="position: absolute; display: flex;  bottom:1%; right: 1%;">
+                        <a href="#"><img src="assect/cart/minus-icon.png" alt="" width="20"></a>
+                        |
+                        <a href="#"><img src="assect/cart/add-icon.png" alt="" width="20"></a>
+                    </div>
+                </div>
+
+                <!-- item 02 -->
+                <div class="content">
+                    <input type="checkbox" class="content-checkBox" onclick="" checked>
+                    <!-- item image in here -->
+                    <img class="content-image" src="assect/cart/item2-img.jpeg" alt="">
+
+                    <h4 class="product-name">Animal cuts powder orange Mango Flaver 650g</h4>
+                    <a class="delete-icon" href="#"><img width="28" src="assect/bin-icon2.png" alt=""></a>
+
+                    <h4 class="item-price">Rs. 16,500</h4>
+                    <div style="position: absolute; display: flex;  bottom:1%; right: 1%;">
+                        <a href="#"><img src="assect/cart/minus-icon.png" alt="" width="20"></a>
+                        |
+                        <a href="#"><img src="assect/cart/add-icon.png" alt="" width="20"></a>
+                    </div>
+                </div>
+
+                <!-- item 03 -->
+                <div class="content">
+                    <input type="checkbox" class="content-checkBox" onclick="">
+                    <!-- item image in here -->
+                    <img class="content-image" src="assect/cart/item3-img.jpg" alt="">
+
+                    <h4 class="product-name">Animal cuts powder orange Mango Flaver 650g</h4>
+                    <a class="delete-icon" href="#"><img width="28" src="assect/bin-icon2.png" alt=""></a>
+
+                    <h4 class="item-price">Rs. 16,500</h4>
+                    <div style="position: absolute; display: flex;  bottom:1%; right: 1%;">
+                        <a href="#"><img src="assect/cart/minus-icon.png" alt="" width="20"></a>
+                        |
+                        <a href="#"><img src="assect/cart/add-icon.png" alt="" width="20"></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- summery box -->
+        <div class="summary">
+            <h1>summary</h1>
+
+            <div class="summary-con">
+                <div>
+                    <label for="">Sub total</label>
+                    <input type="text" value="Rs. 27,000" readonly>
+                </div>
+
+                <div>
+                    <label for="">Discount</label>
+                    <input type="text" value="-Rs. 500" readonly>
+                </div>
+
+                <div>
+                    <label for="">Total</label>
+                    <input type="text" value="Rs. 26,500" readonly>
+                </div>
+
+            </div>
+            <button id="checkout-btn" onclick="openPaymentMethords()">Checkout (2)</button>
+        </div>
+
+        <!-- buyer protection box -->
+        <div class="payment-methods">
+            <h1>Payment methods</h1>
+            <img id="paymentmethod-img" src="assect/cart/paymentMethod-img.png" alt="">
+            <h3>Buyer Protection</h3>
+
+            <div style="display: flex;">
+                <img src="assect\cart\protect-icon.png" alt="" width="20">
+                Get full refund amount of damageor if not deleverd
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+
+
+</html>

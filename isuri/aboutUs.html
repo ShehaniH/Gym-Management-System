@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleAbout.css">
+    <!-- <script src="../js/script-cart.js"></script> -->
+    <title>About US</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav-session-one">
+            <!-- rocstar logo in hear -->
+            <img class="nav-logo" src="assect/user-navigationBar/nav-logo.png" alt="logo">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#">Home</a></li>
+                <li class="nav-list-item"><a href="#">Shop</a></li>
+                <li class="nav-list-item"><a href="#">About us</a></li>
+                <li class="nav-list-item"><a href="#">feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-session-two">
+            <!-- shoping cart image in hear -->
+            <div style="position: relative;">
+                <img class="nav-shopping-cart" src="assect/user-navigationBar/shoping-cart.png" alt="Cart"
+                    onclick="navigateToCart()">
+                <!-- add cart item ount -->
+                <span id="item-count">0</span>
+            </div>
+
+            <div class="nav-search-option">
+                <input class="nav-search-bar" type="search">
+                <!-- serch button -->
+                <button id="nav-search-btn">Search</button>
+            </div>
+            <div class="nav-user">
+                <img id="nav-user-img" src="assect/user-navigationBar/nav-user.png" alt="">
+                <a id="nav-account" href="#">Account</a>
+                <div class="nav-account-sidebar">
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <section id="main">
+
+        <div style="background-color: rgb(207, 207, 240);">
+
+            <h1 style="font-size: 50px;">About Us</h1>
+
+            <hr style="width: 100%; height:1px; border-width:3px; margin-top: 2.3%;">
+
+            <p style="font-size: 17px;">
+                Welcome to our online fitness training platform! We are a team of dedicated and certified fitness
+                trainers
+                passionate
+                about helping individuals achieve their health and wellness goals from the comfort of their own homes.
+                With our expertise and personalized approach, we strive to provide top-notch virtual training
+                experiences
+                that are convenient,
+                effective, and tailored to your specific needs.
+                Our online fitness trainers are highly experienced professionals who have a deep understanding of
+                various
+                exercise modalities,
+                nutrition, and lifestyle factors that contribute to a balanced and healthy lifestyle.
+                Whether you're a beginner looking to kickstart your fitness journey or an experienced athlete seeking to
+                enhance your performance,
+                our trainers are here to guide and support you every step of the way.
+            </p>
+        </div>
+
+        <h1 style="font-size: 30px;">The Team</h1>
+
+        <div class="team-section">
+
+            <div class="person">
+                <img class="person-img" src="assect\aboutUS\person-img.jpg" alt="person-img">
+                <h2>John Kolton</h2>
+                General Manager
+                <img class="social-img" src="assect\aboutUS\linkedln-img.png" alt="social-img">
+            </div>
+
+
+            <div class="person">
+                <img class="person-img" src="assect\aboutUS\person1.jpg" alt="person-img">
+                <h2>Michalle Jennie</h2>
+                Channel Partner Manager
+                <img class="social-img" src="assect\aboutUS\linkedln-img.png" alt="social-img">
+            </div>
+
+            <div class="person">
+                <img class="person-img" src="assect\aboutUS\person2.jpg" alt="person-img">
+                <h2>Shayla Elissa</h2>
+                Markerting Manager
+                <img class="social-img" src="assect\aboutUS\linkedln-img.png" alt="social-img">
+            </div>
+
+        </div>
+        </div>
+        <div class="team-section">
+
+            <div class="person">
+                <img class="person-img" src="assect\aboutUS\person3.jpg" alt="person-img">
+                <h2>Daniel Smith</h2>
+                Customer Support Specialist
+                <img class="social-img" src="assect\aboutUS\linkedln-img.png" alt="social-img">
+            </div>
+
+            <div class="person">
+                <img class="person-img" src="assect\aboutUS\person4.jpg" alt="person-img">
+                <h2>Joe Taylor</h2>
+                Product Manager
+                <img class="social-img" src="assect\aboutUS\linkedln-img.png" alt="social-img">
+            </div>
+
+
+            <div class="person">
+                <img class="person-img" src="assect\aboutUS\person5.jpg" alt="person-img">
+                <h2>Nichola Cruz</h2>
+                Customer Support Specialist
+                <img class="social-img" src="assect\aboutUS\linkedln-img.png" alt="social-img">
+            </div>
+
+        </div>
+
+
+        <style>
+            body {
+                padding: 25px;
+            }
+
+            .team-section {
+                margin-left: 15%;
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 60px;
+            }
+
+            .person {
+                border: 1px solid black;
+                width: 230px;
+                height: 450px;
+                padding: 10px;
+                position: relative;
+            }
+
+            .person-img {
+                border: 1px solid black;
+                /* padding: 10px; */
+                width: 200px;
+                height: 300px;
+                margin-left: 12px;
+                margin-top: 12px;
+            }
+
+            .social-img {
+                width: 35px;
+                ;
+                height: 35px;
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+            }
+        </style>
+
+    </section>
+
+</body>
+
+
+
+</html>

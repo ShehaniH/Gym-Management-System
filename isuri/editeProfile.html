@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/editeProfile.css">
+    <script src="js/editeProfile.js"></script>
+</head>
+
+<body>
+
+    <form action="" method="">
+        <div class="profile">
+            <div class="profile-image">
+                <img src="assect/editeProfile-img/profile-image.jpg" alt="Profile Image">
+                <button class="upload-button">Upload Image</button>
+            </div>
+            <div class="profile-content">
+                <div class="profile-details">
+                    <div class="left-section">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+
+                        <label for="gender">Gender:</label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+
+                        <label for="tel">Tel No:</label>
+                        <input type="tel" id="tel" placeholder="Enter your telephone number">
+                    </div>
+
+                    <div class="right-section">
+                        <label for="address">Address:</label>
+                        <textarea name="" id="address" cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="change-password">
+                    <h3>Change Password</h3>
+                    <label for="current-password">Current Password:</label>
+                    <input type="password" id="current-password" placeholder="Enter your current password">
+
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" placeholder="Enter your new password">
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your new password">
+                </div>
+
+                <div class="notification-section">
+                    <h3>Active Notifications</h3>
+                    <div class="notification">
+                        <label for="price-alerts">Price alerts & reminders:</label>
+                        <input type="checkbox" id="price-alerts">
+                    </div>
+                    <div class="notification">
+                        <label for="item-recommendations">Item recommendations:</label>
+                        <input type="checkbox" id="item-recommendations">
+                    </div>
+                    <div class="notification">
+                        <label for="sales-announcements">Sales announcements:</label>
+                        <input type="checkbox" id="sales-announcements">
+                    </div>
+                    <div class="notification">
+                        <label for="daily-deals">Daily deals:</label>
+                        <input type="checkbox" id="daily-deals">
+                    </div>
+                    <div class="notification">
+                        <label for="order-updates">Order updates:</label>
+                        <input type="checkbox" id="order-updates">
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button class="delete-account">Delete Account</button>
+                    <button class="save-changes">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+
+
+</html>
